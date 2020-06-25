@@ -1,0 +1,12 @@
+<p>label-details works!</p>
+<div *ngIf="label">
+
+  <h2>{{label.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{label.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="label.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>

@@ -1,0 +1,8 @@
+<ul class="labels">
+  <li [class.selected]="label === selectedLabel" *ngFor = "let label of labels" (click)="onSelect(label)">
+  <span class="badge"> {{label.id}}</span>
+    {{label.name}}
+  </li>
+</ul>
+
+<app-label-details [label]="selectedLabel"></app-label-details>
